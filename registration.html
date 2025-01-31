@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="registration-container">
+      <!-- Login and registration links -->
+      <div class="link">
+        <a href="#" class="login-link">Login</a>
+        <span class="separator">|</span>
+        <p class="registration">Registration</p>
+      </div>
+      <p class="registration-description">
+        Enter your email and password to register.
+      </p>
+      <!--Форма -->
+      <form
+        action="/submit-registration"
+        method="POST"
+        class="registration-form"
+      >
+        <!-- Поля форми -->
+        <input
+          type="text"
+          name="username"
+          placeholder="Username"
+          class="input-field"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email address"
+          class="input-field"
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          class="input-field"
+        />
+        <input
+          type="password"
+          name="confirm_password"
+          placeholder="Confirm Password"
+          class="input-field"
+        />
+        <!-- Кнопка Register -->
+        <button type="submit" class="register-button">Register</button>
+      </form>
+      <!-- Лінія з текстом -->
+      <div class="divider">
+        <hr class="line" />
+        <span class="divider-text">Or register with</span>
+        <hr class="line" />
+      </div>
+      <div class="social-buttons">
+        <!-- Кнопка для Google -->
+        <button class="social-button">
+          <img src="img/google1.png" alt="Google icon" />
+          Continue with Google
+        </button>
+        <!-- Кнопка для Facebook -->
+        <button class="social-button">
+          <img src="img/facebook1.png" alt="Facebook icon" />
+          Continue with Facebook
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
