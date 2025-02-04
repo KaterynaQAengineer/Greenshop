@@ -1,40 +1,38 @@
-
 @font-face {
-  font-family: 'MyFont';
-  src: url('../fonts/CeraPro-Regular.woff2') format('woff2');
+  font-family: "MyFont";
+  src: url("../fonts/CeraPro-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'MyFont';
-  src: url('../fonts/CeraPro-Bold.woff2') format('woff2');
+  font-family: "MyFont";
+  src: url("../fonts/CeraPro-Bold.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'MyFont';
-  src: url('../fonts/CeraPro-Light.woff2') format('woff2');
+  font-family: "MyFont";
+  src: url("../fonts/CeraPro-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'MyFont';
-  src: url('../fonts/CeraPro-Medium.woff2') format('woff2');
+  font-family: "MyFont";
+  src: url("../fonts/CeraPro-Medium.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
-
 body {
-  font: 14px/24px 'Cera Pro', sans-serif;
-  color: #3D3D3D;
+  font: 14px/24px "Cera Pro", sans-serif;
+  color: #3d3d3d;
 }
 .container {
   width: 100%;
@@ -58,7 +56,7 @@ body {
   font-size: 16px;
 }
 
-.header-nav_list{
+.header-nav_list {
   list-style-type: none;
   text-align: center;
   padding: 0;
@@ -77,7 +75,7 @@ body {
 .plantsinfo_list a,
 .header-nav_list a {
   text-decoration: none;
-  color: #3D3D3D;
+  color: #3d3d3d;
 }
 
 .logo {
@@ -86,9 +84,9 @@ body {
 
 .btn {
   min-width: 100px;
-  background: #46A358;
+  background: #46a358;
   color: #fff;
-  border: 1px solid #46A358;
+  border: 1px solid #46a358;
   border-radius: 6px;
   padding: 6px 10px;
   text-decoration: none;
@@ -96,7 +94,7 @@ body {
 }
 .btn:hover {
   background: #fff;
-  color: #46A358;
+  color: #46a358;
 }
 .btn:hover img {
   display: none;
@@ -115,7 +113,7 @@ body {
 /* benner-style */
 .banner {
   padding: 30px;
-  background:rgba(245, 245, 245, 0.5) ;
+  background: rgba(245, 245, 245, 0.5);
 }
 .banner_text,
 .banner_img {
@@ -128,8 +126,8 @@ body {
   text-align: center;
   width: 37%;
 }
-.greentxt{
-  color:#46A358
+.greentxt {
+  color: #46a358;
 }
 .title-add {
   text-transform: uppercase;
@@ -141,9 +139,8 @@ body {
   font-weight: 900;
   margin: 0;
   line-height: 1;
-
 }
-.banner h1+p {
+.banner h1 + p {
   font-weight: 300;
   color: #727272;
   margin-top: 0;
@@ -163,7 +160,7 @@ body {
   float: left;
   margin: 10px;
   width: 25%;
-  background:rgba(245, 245, 245, 0.5) ;
+  background: rgba(245, 245, 245, 0.5);
 }
 .aside-list {
   list-style-type: none;
@@ -175,12 +172,11 @@ body {
   font-size: 15px;
   font-weight: 400;
   line-height: 2.6;
-  color: #3D3D3D;
+  color: #3d3d3d;
 }
 .aside-list a.active,
-.plantsinfo_list a.active
-{
-  color:#46a358;
+.plantsinfo_list a.active {
+  color: #46a358;
 }
 
 .sidebar h3 {
@@ -203,24 +199,23 @@ body {
   float: right;
 }
 .plantsinfo_list,
-.sort
-  {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 15px;
-  }
-  .plantsinfo_list {
-    width: calc(100% - 200px);
-  }
+.sort {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 15px;
+}
+.plantsinfo_list {
+  width: calc(100% - 200px);
+}
 /* plant card */
 .plant-card {
   display: inline-block;
   vertical-align: middle;
   padding: 30px;
 }
-.plant-image{
+.plant-image {
   padding: 30px;
-  background:rgba(245, 245, 245, 0.5) ;
+  background: rgba(245, 245, 245, 0.5);
 }
 .planet-name {
   font-weight: 400;
@@ -236,7 +231,7 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: 600;
-  color: #3D3D3D;
+  color: #3d3d3d;
   width: 35px;
   height: 35px;
   border: 1px solid #727272;
