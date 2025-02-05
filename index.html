@@ -45,59 +45,66 @@
           </div>
         </section>
 
-        <section class="post-container">
+        <section class="post-container clearfix">
           <aside class="sidebar">
-            <h3>Categories</h3>
+            <h4>Categories</h4>
             <ul class="aside-list">
-              <li><a href="" class="active">House Plants</a></li>
-              <li><a href="">Potter Plants</a></li>
-              <li><a href="">Seeds</a></li>
-              <li><a href="">Small Plants</a></li>
-              <li><a href="">Big Plants</a></li>
-              <li><a href="">Succulents</a></li>
-              <li><a href="">Trerrariums</a></li>
-              <li><a href="">Gardening</a></li>
-              <li><a href="">Acessories</a></li>
+              <li><a href="#" class="active">House Plants</a></li>
+              <li><a href="#">Potter Plants</a></li>
+              <li><a href="#">Seeds</a></li>
+              <li><a href="#">Small Plants</a></li>
+              <li><a href="#">Big Plants</a></li>
+              <li><a href="#">Succulents</a></li>
+              <li><a href="#">Trerrariums</a></li>
+              <li><a href="#">Gardening</a></li>
+              <li><a href="#">Acessories</a></li>
             </ul>
             <div class="sidebar-ad">
               <a href="#" target="_blank">
-                <img src="img/SuperSaleBanner.svg" alt="Advertisement" />
+                <img src="img/supersalebanner.svg" alt="Advertisement" />
               </a>
             </div>
           </aside>
-          <section class="plantsinfo">
-            <div>
-              <ul class="plantsinfo_list">
-                <li><a href="#" class="active">All Plants</a></li>
-                <li><a href="#">New Arrivals</a></li>
-                <li><a href="#">Sale</a></li>
+          <div class="content">
+            <div class="plantsinfo">
+                <ul class="plantsinfo_list">
+                  <li><a href="#" class="active">All Plants</a></li>
+                  <li><a href="#">New Arrivals</a></li>
+                  <li><a href="#">Sale</a></li>
+                </ul>
+             
+                <div class="sort">
+                  <label for="sort">Sort by:</label>
+                  <select name="sort" id="sort">
+                    <option value="">Default sorting</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                 <ul  class="plant-card">
+                <li class="product_item">
+                 <div class="product_img">
+                  <img src="img/image1.svg" alt="plant1">
+                 </div>
+                  <h5>Barberton Daisy</h5>
+                  <span class="price">$119.00</span>
+                </li>
               </ul>
-              <div class="sort">
-                <label for="sort">Sort by:</label>
-                <select name="sort" id="sort">
-                  <option value="">Default sorting</option>
-                </select>
-              </div>
-              <div class="plants-conteiner">
-                <div class="plant-card">
-                  <a href="#">
-                    <img
-                      src="img/cardproduct.png"
-                      alt="Product1"
-                      class="plant-image"
-                    />
-                  </a>
-                </div>
-                <div class="pagination">
-                  <a href="" class="active">1</a>
-                  <a href="">2</a>
-                  <a href="">3</a>
-                  <a href="">4</a>
-                  <a href="">></a>
+              <ul class="pages">
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#"><img src="img/arrow.svg" alt=""></a></li>
+
+              </ul>
+            </div>    
+             
                 </div>
               </div>
-            </div>
-          </section>
+           
+          </div>
+      
         </section>
       </div>
     </main>

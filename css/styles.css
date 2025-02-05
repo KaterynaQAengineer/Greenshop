@@ -1,33 +1,85 @@
 @font-face {
-  font-family: "MyFont";
+  font-family: "Cera Pro";
   src: url("../fonts/CeraPro-Regular.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
-  font-family: "MyFont";
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-RegularItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
   src: url("../fonts/CeraPro-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
-  font-family: "MyFont";
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-BlackItalic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
   src: url("../fonts/CeraPro-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
-  font-family: "MyFont";
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-ThinItalic.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
   src: url("../fonts/CeraPro-Medium.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-MediumItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
 }
 
 body {
@@ -38,6 +90,11 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: auto;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .header {
@@ -65,12 +122,11 @@ body {
 .plantsinfo_list li,
 .header-nav_list li {
   display: inline-block;
-  margin: 0 20px;
+  margin-right: 37px;
 }
 
 .header-nav_list .active {
   font-weight: 700;
-  line-height: 0.2;
 }
 .plantsinfo_list a,
 .header-nav_list a {
@@ -91,6 +147,7 @@ body {
   padding: 6px 10px;
   text-decoration: none;
   text-align: center;
+  font-weight: 500;
 }
 .btn:hover {
   background: #fff;
@@ -112,14 +169,20 @@ body {
 
 /* benner-style */
 .banner {
+  font-size: 16px;
   padding: 30px;
   background: rgba(245, 245, 245, 0.5);
+  margin-bottom: 50px;
 }
 .banner_text,
 .banner_img {
   display: inline-block;
   vertical-align: middle;
   width: 62%;
+}
+.title-add {
+  text-align: uppercase;
+  letter-spacing: 1px;
 }
 
 .banner_img {
@@ -137,7 +200,7 @@ body {
   text-transform: uppercase;
   font-size: 70px;
   font-weight: 900;
-  margin: 0;
+  margin: 0 0 10px;
   line-height: 1;
 }
 .banner h1 + p {
@@ -148,39 +211,46 @@ body {
 }
 .banner .btn {
   text-decoration: upercase;
-  padding: 10px;
+  padding: 6px 10px;
+  min-width: 140px;
 }
 
 /* post container */
 .post-container {
-  padding: 30px;
+  padding: 30px 0;
 }
 
 .sidebar {
   float: left;
-  margin: 10px;
-  width: 25%;
+  padding: 14px 18px;
+  font-size: 15px;
+  /* width: 29%; */
+  width: 310px;
   background: rgba(245, 245, 245, 0.5);
 }
 .aside-list {
   list-style-type: none;
-  padding: 0 20px;
-  margin: 0;
+  padding: 0 0 0 20px;
 }
 .aside-list a {
   text-decoration: none;
   font-size: 15px;
-  font-weight: 400;
   line-height: 2.6;
   color: #3d3d3d;
 }
 .aside-list a.active,
 .plantsinfo_list a.active {
   color: #46a358;
+  font-weight: 700;
 }
-
-.sidebar h3 {
+.aside-list a:hover,
+.plantsinfo_list a:hover {
+  color: #46a358;
+}
+.sidebar h4 {
+  margin-top: 0;
   padding: 0 10px;
+  font-size: 18px;
 }
 .sidebar-ad {
   width: 100%;
@@ -193,34 +263,90 @@ body {
   margin: 0;
   padding: 0;
 }
+.sidebar + .content {
+  float: right;
+  padding-left: 50px;
+  width: calc(100% - 310px);
+}
 
 .plantsinfo {
-  width: 70%;
+  width: 100%;
   float: right;
 }
+
 .plantsinfo_list,
 .sort {
   display: inline-block;
   vertical-align: middle;
   font-size: 15px;
 }
+.sort select {
+  border: none;
+  outline: none;
+  background: none;
+}
 .plantsinfo_list {
   width: calc(100% - 200px);
+  margin: 0;
+  padding: 0;
 }
+.product_item {
+  width: 33.33%;
+}
+
+.product-image {
+  background: rgba(245, 245, 245, 0.5);
+}
+.product_item h5 {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+}
+.product_item h5 {
+}
+
 /* plant card */
 .plant-card {
   display: inline-block;
   vertical-align: middle;
-  padding: 30px;
+  margin: 0;
+  list-style-type: none;
+  margin-bottom: 20px;
+  padding: 0;
 }
-.plant-image {
-  padding: 30px;
-  background: rgba(245, 245, 245, 0.5);
+.price {
+  font-size: 18;
+  color: #46a358;
+  font-weight: 700;
 }
-.planet-name {
-  font-weight: 400;
+.pages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
 }
-.pagination {
+.pages li {
+  margin-left: 10px;
+  display: inline-block;
+  text-align: center;
+}
+.pages li.active a,
+.pages a:hover {
+  background: #46a358;
+  color: #fff;
+}
+.pages a {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #727272;
+  padding-top: 6px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .pagination {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
@@ -240,7 +366,7 @@ body {
 .pagination a.active {
   background: #46a358;
   color: white;
-}
+} */
 
 /*Registration form*/
 .registration-container {
@@ -279,7 +405,6 @@ body {
 }
 .registration-description {
   text-align: center;
-  font-weight: 400px;
   font-size: 13px;
   line-height: 16px;
   font-family: sans-serif;
