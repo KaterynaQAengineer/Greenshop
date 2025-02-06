@@ -124,10 +124,11 @@ body {
   display: inline-block;
   margin-right: 37px;
 }
-
+.header-nav_list a:hover,
 .header-nav_list .active {
   font-weight: 700;
 }
+
 .plantsinfo_list a,
 .header-nav_list a {
   text-decoration: none;
@@ -224,7 +225,6 @@ body {
   float: left;
   padding: 14px 18px;
   font-size: 15px;
-  /* width: 29%; */
   width: 310px;
   background: rgba(245, 245, 245, 0.5);
 }
@@ -269,11 +269,6 @@ body {
   width: calc(100% - 310px);
 }
 
-.plantsinfo {
-  width: 100%;
-  float: right;
-}
-
 .plantsinfo_list,
 .sort {
   display: inline-block;
@@ -290,9 +285,6 @@ body {
   margin: 0;
   padding: 0;
 }
-.product_item {
-  width: 33.33%;
-}
 
 .product-image {
   background: rgba(245, 245, 245, 0.5);
@@ -307,7 +299,6 @@ body {
 
 /* plant card */
 .plant-card {
-  display: inline-block;
   vertical-align: middle;
   margin: 0;
   list-style-type: none;
@@ -319,6 +310,7 @@ body {
   color: #46a358;
   font-weight: 700;
 }
+/* pagination */
 .pages {
   list-style-type: none;
   margin: 0;
@@ -345,28 +337,6 @@ body {
   text-decoration: none;
   color: inherit;
 }
-
-/* .pagination {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-}
-.pagination a {
-  display: flex;
-  text-decoration: none;
-  justify-content: center;
-  align-items: center;
-  font-weight: 600;
-  color: #3d3d3d;
-  width: 35px;
-  height: 35px;
-  border: 1px solid #727272;
-  border-radius: 8px;
-}
-.pagination a.active {
-  background: #46a358;
-  color: white;
-} */
 
 /*Registration form*/
 .registration-container {
