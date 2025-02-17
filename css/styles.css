@@ -326,7 +326,7 @@ body {
 }
 .info-sale {
   position: absolute;
-  font-style: 16px;
+  font-size: 16px;
   font-weight: 500;
   background: #46a358;
   color: white;
@@ -345,6 +345,9 @@ body {
   transform: translateX(50%);
   z-index: 2;
   visibility: hidden;
+}
+.icon:hover path {
+  fill: #46a358;
 }
 .icon {
   cursor: pointer;
