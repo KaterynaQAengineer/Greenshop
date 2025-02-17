@@ -121,9 +121,11 @@ body {
   text-transform: capitalize;
   list-style-type: none;
   justify-content: center;
+  position: relative;
 }
-.header-nav_list li {
+.header-nav_list > li {
   padding: 0 25px;
+  position: relative;
 }
 
 .plantsinfo_list li {
@@ -174,7 +176,54 @@ body {
   width: calc(100% - 250px);
   flex-grow: 1;
 }
+/* Heder Nav Submenu style */
+.header-nav_submenu {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  width: 188px;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%);
+  display: none;
+  padding-top: 37px;
+}
+.header-nav_list li:hover .header-nav_submenu{
+display: block;
+}
+.header-nav_submenu a {
+  padding: 8px 14px;
+  display: block;
+  background: rgba(237, 246, 238, 1);
+}
+.header-nav_submenu li a:hover {
+  background: rgba(26, 113, 42, 1);
+  color: #fff;
+}
 
+/* header-nav_secondmenu style */
+.header-nav_secondmenu {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  width: 178px;
+  left: calc(100% + 2px); 
+  top: 0;
+  display: none;
+  padding-top: 37px;
+}
+
+.header-nav_list-item li:has(ul) {
+  background-image: url('../img/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+ .header-nav_list-item{
+  position: relative;
+} 
+.header-nav_submenu-item:hover .header-nav_secondmenu {
+display: block;
+}
 /* benner-style */
 .banner {
   font-size: 16px;
