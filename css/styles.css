@@ -133,12 +133,26 @@ body {
   margin-right: 37px;
 }
 .plantsinfo_list {
-  /* flex: 1; */
   padding: 0;
 }
 
 .header-nav_list .active {
   font-weight: 700;
+}
+.header-nav_list a:hover,
+.header-nav_list li:hover > a {
+  color: #46a358;
+}
+.header-nav_list > li:hover > a::after,
+.header-nav_list > li.active > a::after {
+  content: "";
+  position: absolute;
+  bottom: -33px;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  background-color: #46a358;
 }
 
 .blog-item a,
@@ -203,7 +217,7 @@ display: block;
 
 .header-nav_list-item li:has(ul)::after {
   content: '';
-  background-image: url('../img/new_arrow.svg');
+  background-image: url(../img/new_arrow.svg);
   background-repeat: no-repeat;
   background-size: 12px 12px;
   width: 12px;
@@ -239,9 +253,6 @@ display: block;
   top: 37px;
   display: none;
 
-}
-.header-nav_list-item:hover >a {
-  color: #46a358;
 }
 .header-nav_submenu-item:hover .header-nav_secondmenu {
 display: block;
@@ -334,7 +345,8 @@ display: block;
 .header-nav_list a:hover,
 .blog-item a:hover,
 .aside-list a:hover,
-.plantsinfo_list a:hover {
+.plantsinfo_list a:hover 
+ {
   color: #46a358;
 }
 .sidebar h4 {
