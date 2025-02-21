@@ -607,6 +607,16 @@ display: block;
   gap: 60px;
   align-items: start;
 }
+.footer-list-item {
+  position: relative;
+  background-image: url(../img/ellipse1.svg); 
+  background-repeat: no-repeat;
+}
+
+.flower-icon {
+  transform: translate(10%, -20%);
+}
+
 .footer-list li {
   max-width: 204px;
 }
@@ -653,10 +663,9 @@ font-weight: 700;
 .footer-conteiner2 {
   display: flex;
   align-items: center;
-  gap: 87px;
+  gap: 150px;
   height: 90px;
   background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
-
   padding: 25px 27px;
 
 }
@@ -679,7 +688,11 @@ color:#3D3D3D;
 .footer-contact {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 150px;
+  width: 100%;
+}
+.footer-item:last-child {
+  margin-left: auto;
 }
 .footer-conteiner3 {
   display: flex;
