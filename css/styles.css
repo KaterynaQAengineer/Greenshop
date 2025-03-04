@@ -202,7 +202,7 @@ body {
   padding-bottom: 17px;
   margin-bottom: 12px;
 }
-
+.btn-burger,
 .logo,
 .header-nav,
 .btn {
@@ -259,7 +259,7 @@ body {
 .logo {
   width: 150px;
 }
-
+.btn-burger,
 .btn {
   display: inline-block;
   min-width: 100px;
@@ -272,6 +272,10 @@ body {
   text-align: center;
   font-weight: 500;
 }
+.btn-burger {
+margin-right: 20px;
+}
+.btn-burger:hover,
 .register-button:hover,
 .newsletter-form button:hover,
 .btn:hover {
@@ -896,11 +900,13 @@ padding: 5px;
   filter: brightness(1.2); 
   transform: scale(1.05); 
   color: #3D3D3D;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-item:hover i {
   color: #3d3d3d;
   transform: scale(1.2); 
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 /*Registration form*/
@@ -1019,4 +1025,100 @@ padding: 5px;
   transform: scale(1.05); 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+/* Burger menu */
 
+.burger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.burger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+}
+.burger span,
+.burger:before,
+.burger:after 
+{
+content: '';
+width: 30px;
+display: block;
+height: 3px;
+background: #000;
+position: absolute;
+transition: transform 0.2s linear, opacity 0.2s;
+}
+.burger:before {
+  top: 0;
+  left: 0;
+}
+.burger:after 
+{
+  bottom: 0;
+  left: auto;
+}
+.burger span {
+top: 50%;
+left: 50%;
+transform: translate(-50%, -2px);
+}
+
+
+.burger-menu:hover .burger span  {
+  opacity: 0;
+  transform: translateY(-50%, -2px) scale(0);
+}
+.burger-menu:hover .burger::after{
+  transform: rotate(-45deg) translate(9px, -9px);
+}
+.burger-menu:hover .burger::before{
+  transform: rotate(45deg) translate(10px, 10px);
+}
+
+.burger-menu {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.items-burger {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: white;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  width: 150px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10px);
+  z-index: 5;
+}
+
+.items-burger li {
+  margin: 5px 0;
+}
+
+.items-burger a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 8px;
+  transition: background 0.2s ease;
+}
+.items-burger  a:hover {
+  background: #46a358;
+  color: white;
+}
+.burger-menu:hover .items-burger {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
