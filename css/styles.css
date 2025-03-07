@@ -1103,7 +1103,7 @@ margin: 0;
 /* input styles */
 .check {
   position: absolute;
-  left: 9999px;
+  left: -200px;
 }
 
 .check:checked + .burger-menu .burger span {
@@ -1118,4 +1118,23 @@ margin: 0;
 } 
 .label-input:has(.check:checked) + .items-burger {
   transform: translateX(0);
+}
+/* Animation */
+.heart {
+  font-size: 20px;
+}
+@keyframes heart {
+  from {
+    color: #000;
+    transform: scale(1.2);
+  }
+  to {
+    color: #f00;
+    transform: scale(1.5);
+  }
+}
+  
+.heart span {
+  animation: heart 2s infinite alternate both;
+  display: inline-block;
 }
